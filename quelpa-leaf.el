@@ -6,7 +6,7 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-elpa/quelpa-leaf
 ;; Version: 0.0.1
-;; Package-Requires: ((emacs "24.3") (quelpa "1.0") (leaf "4.1.0"))
+;; Package-Requires: ((emacs "25.1") (quelpa "1.0") (leaf "4.1.0"))
 ;; Keyword: package managment elpa leaf
 
 ;; This file is NOT part of GNU Emacs.
