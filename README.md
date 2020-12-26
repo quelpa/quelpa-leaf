@@ -1,5 +1,5 @@
 <a href="https://github.com/quelpa/quelpa"><img align="right" src="https://github.com/quelpa/quelpa/raw/master/logo/quelpa-logo-h64.png"></a>
-# quelpa-use-package
+# quelpa-leaf
 
 [![Build Status](https://travis-ci.org/jcs-elpa/quelpa-leaf.svg?branch=master)](https://travis-ci.org/jcs-elpa/quelpa-leaf)
 
