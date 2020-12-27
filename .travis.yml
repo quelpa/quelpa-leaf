@@ -23,7 +23,7 @@ install:
   - export EMACS=/tmp/emacs/bin/emacs
   - $EMACS --version
 script:
-  sudo ./ci/run.sh
+  ./ci/run.sh
 notifications:
   email:
     recipients:
