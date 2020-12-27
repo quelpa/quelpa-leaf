@@ -7,35 +7,21 @@
     (eval-buffer)
     (quelpa-self-upgrade)))
 
-;; install use-package
-(quelpa 'use-package)
+;; install leaf
+(quelpa 'leaf)
 
 ;; require the library
 (add-to-list 'load-path top-dir)
-(require 'quelpa-use-package)
+(require 'quelpa-leaf)
 
 ;; test some installs
-(use-package grandshell-theme :quelpa)
-(use-package ipretty :quelpa t)
-(use-package flx-ido :quelpa (:stable t))
-(use-package flx-ido :quelpa ((flx-ido) :upgrade t))
-(use-package git-modes :quelpa (git-modes :fetcher github :repo "magit/git-modes"))
-(use-package git-timemachine :quelpa ((git-timemachine :fetcher gitlab :repo "pidu/git-timemachine") :stable t))
-(use-package git-timemachine :quelpa ((git-timemachine :fetcher gitlab :repo "pidu/git-timemachine") :upgrade t))
-
-;; test advice
-(setq use-package-always-ensure t)
-(quelpa-use-package-activate-advice)
-(use-package kite-mini
-  :quelpa (kite-mini :fetcher github :repo "tungd/kite-mini.el"))
-(quelpa-use-package-deactivate-advice)
-
-;; test ensure
-(setq use-package-ensure-function 'quelpa)
-(setq use-package-always-ensure nil)
-(use-package abc-mode :ensure t)
-(setq use-package-always-ensure t)
-(use-package elisp-slime-nav)
+(leaf grandshell-theme :quelpa)
+(leaf ipretty :quelpa t)
+(leaf flx-ido :quelpa (:stable t))
+(leaf flx-ido :quelpa ((flx-ido) :upgrade t))
+(leaf git-modes :quelpa (git-modes :fetcher github :repo "magit/git-modes"))
+(leaf git-timemachine :quelpa ((git-timemachine :fetcher gitlab :repo "pidu/git-timemachine") :stable t))
+(leaf git-timemachine :quelpa ((git-timemachine :fetcher gitlab :repo "pidu/git-timemachine") :upgrade t))
 
 ;; show us the cache
 (require 'pp)
