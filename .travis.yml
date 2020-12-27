@@ -25,10 +25,3 @@ install:
   - chmod +x ./ci/run.sh
 script:
   ./ci/run.sh
-notifications:
-  email:
-    recipients:
-      - quelpa@postmomentum.ch
-      - v.schneidermann@gmail.com
-    on_success: never
-    on_failure: always
