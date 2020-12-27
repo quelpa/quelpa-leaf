@@ -22,6 +22,7 @@ install:
   - tar -xaf emacs-bin-${EMACS_VERSION}.tar.gz -C /
   - export EMACS=/tmp/emacs/bin/emacs
   - $EMACS --version
+  - chmod +x ./ci/run.sh
 script:
   ./ci/run.sh
 notifications:
