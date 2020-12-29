@@ -4,7 +4,7 @@
 ;; Created date 2020-12-26 22:45:18
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
-;; URL: https://github.com/jcs-elpa/quelpa-leaf
+;; URL: https://github.com/quelpa/quelpa-leaf
 ;; Version: 0.0.1
 ;; Package-Requires: ((emacs "25.1") (quelpa "1.0") (leaf "4.1.0"))
 ;; Keyword: package managment elpa leaf
@@ -28,7 +28,7 @@
 ;;
 ;; quelpa handler for `leaf'
 ;; See the the repo website for more info:
-;; https://github.com/jcs-elpa/quelpa-leaf
+;; https://github.com/quelpa/quelpa-leaf
 ;;
 
 ;;; Code:
@@ -40,7 +40,7 @@
   "quelpa handler for leaf."
   :prefix "quelpa-leaf-"
   :group 'lisp
-  :link '(url-link :tag "Repository" "https://github.com/jcs-elpa/quelpa-leaf"))
+  :link '(url-link :tag "Repository" "https://github.com/quelpa/quelpa-leaf"))
 
 (defvar quelpa-leaf-packages-list
   (leaf-list quelpa)
