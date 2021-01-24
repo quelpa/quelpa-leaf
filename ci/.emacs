@@ -13,6 +13,7 @@
 ;; require the library
 (add-to-list 'load-path top-dir)
 (require 'quelpa-leaf)
+(quelpa-leaf-init)
 
 ;; test some installs
 (leaf grandshell-theme :quelpa)
