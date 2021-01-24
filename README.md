@@ -19,6 +19,7 @@ Assuming you have bootstrapped `quelpa`, install `quelpa-leaf` (which installs
    :fetcher git
    :url "https://github.com/quelpa/quelpa-leaf.git"))
 (require 'quelpa-leaf)
+(quelpa-leaf-init)
 ```
 
 ## Usage
