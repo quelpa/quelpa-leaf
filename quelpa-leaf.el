@@ -59,8 +59,7 @@
           (setq frg t
                 retlst (append `(,belm ,@(reverse targetlst)) retlst))
         (setq retlst (cons elm retlst))))
-    (unless frg
-      (warn (format "%s is not found in given list" belm)))
+    (unless frg (warn "%s is not found in given list" belm))
     (nreverse retlst)))
 
 ;;; custom variable setters
