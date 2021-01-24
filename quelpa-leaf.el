@@ -163,8 +163,5 @@ If RENEW is non-nil, renew leaf-{keywords, normalize} cache."
   (dolist (pkg quelpa-leaf-packages-list)
     (require pkg nil 'no-error)))
 
-;; Initialize once after load
-(quelpa-leaf-init)
-
 (provide 'quelpa-leaf)
 ;;; quelpa-leaf.el ends here
