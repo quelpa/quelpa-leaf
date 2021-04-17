@@ -6,7 +6,3 @@ quelpa-leaf-pkg.el
 
 # ignore generated files.
 *.elc
-
-# ignore I use to not ignore.
-Update_Log.txt
-TODO(jenchieh).txt
