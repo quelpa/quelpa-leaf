@@ -52,7 +52,10 @@ After that it is possible to call `leaf` with the `:quelpa` keyword:
 
 The `quelpa` handler is compatible with [MELPA's recipe format](https://github.com/melpa/melpa#recipe-format). You may want to check the optional properties not mentioned above.
 
-## Contribution
+## Contribute
+
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+[![Elisp styleguide](https://img.shields.io/badge/elisp-style%20guide-purple)](https://github.com/bbatsov/emacs-lisp-style-guide)
 
 If you would like to contribute to this project, you may either
 clone and make pull requests to this repository. Or you can
