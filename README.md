@@ -1,10 +1,11 @@
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![MELPA](https://melpa.org/packages/quelpa-leaf-badge.svg)](https://melpa.org/#/quelpa-leaf)
+[![MELPA Stable](https://stable.melpa.org/packages/quelpa-leaf-badge.svg)](https://stable.melpa.org/#/quelpa-leaf)
+
 <a href="https://github.com/quelpa/quelpa"><img align="right" src="https://github.com/quelpa/quelpa/raw/master/logo/quelpa-logo-h64.png"></a>
 # quelpa-leaf
 
-[![Build Status](https://www.travis-ci.com/quelpa/quelpa-leaf.svg?branch=master)](https://www.travis-ci.com/quelpa/quelpa-leaf)
-[![MELPA](https://melpa.org/packages/quelpa-leaf-badge.svg)](https://melpa.org/#/quelpa-leaf)
-[![MELPA Stable](https://stable.melpa.org/packages/quelpa-leaf-badge.svg)](https://stable.melpa.org/#/quelpa-leaf)
-[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![CI](https://github.com/quelpa/quelpa-leaf/actions/workflows/test.yml/badge.svg)](https://github.com/quelpa/quelpa-leaf/actions/workflows/test.yml)
 
 If you are using [leaf](https://github.com/conao3/leaf.el) (which can help to simplify your .emacs) you can use the [quelpa](https://github.com/quelpa/quelpa) handler provided by `quelpa-leaf`.
 
