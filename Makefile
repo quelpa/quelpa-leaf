@@ -5,9 +5,9 @@ EASK ?= eask
 
 TEST-FILES := $(shell ls test/quelpa-leaf-*.el)
 
-.PHONY: clean checkdoc lint install compile unix-test
+.PHONY: clean checkdoc lint install compile test-install unix-test
 
-ci: clean package install compile
+ci: clean package install compile test-install
 
 package:
 	@echo "Packaging..."
@@ -22,6 +22,10 @@ install:
 compile:
 	@echo "Compiling..."
 	$(EASK) compile
+
+test-install:
+	@echo "Testing..."
+	$(EASK) load ./test/test-install.el
 
 unix-test:
 	@echo "Testing..."
