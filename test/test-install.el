@@ -16,4 +16,8 @@
 ;;(leaf git-timemachine :quelpa ((git-timemachine :fetcher gitlab :repo "pidu/git-timemachine") :stable t))
 ;;(leaf git-timemachine :quelpa ((git-timemachine :fetcher gitlab :repo "pidu/git-timemachine") :upgrade t))
 
+;; show us the cache
+(require 'pp)
+(pp quelpa-cache)
+
 ;;; test-install.el ends here
