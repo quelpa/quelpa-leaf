@@ -3,16 +3,14 @@ SHELL := /usr/bin/env bash
 EMACS ?= emacs
 EASK ?= eask
 
-TEST-FILES := $(shell ls test/quelpa-leaf-*.el)
+TEST-FILES := $(shell ls test/fuzzy-*.el)
 
-.PHONY: clean checkdoc lint install compile test-install unix-test
+.PHONY: clean checkdoc lint package install compile test test-install
 
 ci: clean package install compile test-install
 
 package:
 	@echo "Packaging..."
-	$(EASK) autoloads
-	$(EASK) pkg-file
 	$(EASK) package
 
 install:
@@ -23,13 +21,13 @@ compile:
 	@echo "Compiling..."
 	$(EASK) compile
 
+test:
+	@echo "Testing..."
+	$(EASK) exec ert-runner -L . $(LOAD-TEST-FILES) -t '!no-win' -t '!org'
+
 test-install:
 	@echo "Testing..."
 	$(EASK) load ./test/test-install.el
-
-unix-test:
-	@echo "Testing..."
-	$(CASK) exec ert-runner -L . $(LOAD-TEST-FILES) -t '!no-win' -t '!org'
 
 clean:
 	rm -rf .cask *.elc
