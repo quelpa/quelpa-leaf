@@ -13,7 +13,7 @@
 (leaf flx-ido :quelpa (:stable t))
 (leaf flx-ido :quelpa ((flx-ido) :upgrade t))
 (leaf git-modes :quelpa (git-modes :fetcher github :repo "magit/git-modes"))
-(leaf git-timemachine :quelpa ((git-timemachine :fetcher gitlab :repo "pidu/git-timemachine") :stable t))
-(leaf git-timemachine :quelpa ((git-timemachine :fetcher gitlab :repo "pidu/git-timemachine") :upgrade t))
+;;(leaf git-timemachine :quelpa ((git-timemachine :fetcher gitlab :repo "pidu/git-timemachine") :stable t))
+;;(leaf git-timemachine :quelpa ((git-timemachine :fetcher gitlab :repo "pidu/git-timemachine") :upgrade t))
 
 ;;; test-install.el ends here
