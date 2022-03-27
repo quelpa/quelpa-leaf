@@ -3,7 +3,7 @@ SHELL := /usr/bin/env bash
 EMACS ?= emacs
 EASK ?= eask
 
-TEST-FILES := $(shell ls test/fuzzy-*.el)
+TEST-FILES := $(shell ls test/quelpa-leaf-*.el)
 
 .PHONY: clean checkdoc lint package install compile test test-install
 
