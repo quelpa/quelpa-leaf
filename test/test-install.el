@@ -2,7 +2,7 @@
 ;;; Commentary: Test `quelpa' install capability with `leaf'
 ;;; Code:
 
-(package-initialize)
+(eask-pkg-init)
 
 (require 'quelpa-leaf)
 (quelpa-leaf-init)
