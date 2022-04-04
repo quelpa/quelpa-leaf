@@ -30,4 +30,4 @@ test-install:
 	$(EASK) load ./test/test-install.el
 
 clean:
-	rm -rf .cask *.elc
+	rm -rf .eask *.elc
