@@ -3,8 +3,6 @@ SHELL := /usr/bin/env bash
 EMACS ?= emacs
 EASK ?= eask
 
-TEST-FILES := $(shell ls test/quelpa-leaf-*.el)
-
 .PHONY: clean checkdoc lint package install compile test test-install
 
 ci: clean package install compile test-install
@@ -23,11 +21,19 @@ compile:
 
 test:
 	@echo "Testing..."
-	$(EASK) exec ert-runner -L . $(LOAD-TEST-FILES) -t '!no-win' -t '!org'
+	$(EASK) ert ./test/*.el
 
 test-install:
 	@echo "Testing..."
 	$(EASK) load ./test/test-install.el
 
+checkdoc:
+	@echo "Run checkdoc..."
+	$(EASK) checkdoc
+
+lint:
+	@echo "Run package-lint..."
+	$(EASK) lint
+
 clean:
-	rm -rf .eask *.elc
+	$(EASK) clean-all
