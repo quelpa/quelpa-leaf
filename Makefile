@@ -21,7 +21,7 @@ compile:
 
 test:
 	@echo "Testing..."
-	$(EASK) ert ./test/*.el
+	$(EASK) test ert ./test/*.el
 
 test-install:
 	@echo "Testing..."
@@ -29,11 +29,11 @@ test-install:
 
 checkdoc:
 	@echo "Run checkdoc..."
-	$(EASK) checkdoc
+	$(EASK) lint checkdoc
 
 lint:
 	@echo "Run package-lint..."
-	$(EASK) lint
+	$(EASK) lint package
 
 clean:
 	$(EASK) clean-all
