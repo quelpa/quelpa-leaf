@@ -7,7 +7,7 @@
 ;; URL: https://github.com/quelpa/quelpa-leaf
 ;; Version: 0.0.1
 ;; Package-Requires: ((emacs "25.1") (quelpa "1.0") (leaf "4.1.0"))
-;; Keyword: package managment elpa leaf
+;; Keywords: package managment elpa leaf
 
 ;; This file is NOT part of GNU Emacs.
 
