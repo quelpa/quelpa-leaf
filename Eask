@@ -3,7 +3,7 @@
          "Quelpa handler for leaf")
 
 (website-url "https://github.com/quelpa/quelpa-leaf")
-(keywords "package" "managment" "elpa" "leaf")
+(keywords "convenience" "package" "managment" "elpa" "leaf")
 
 (package-file "quelpa-leaf.el")
 
