@@ -1,3 +1,5 @@
+;; -*- mode: eask; lexical-binding: t -*-
+
 (package "quelpa-leaf"
          "0.0.1"
          "Quelpa handler for leaf")
