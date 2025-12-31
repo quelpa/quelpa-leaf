@@ -1,6 +1,6 @@
 ;;; quelpa-leaf.el --- Quelpa handler for leaf  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2020-2025  Shen, Jen-Chieh
+;; Copyright (C) 2020-2026  Shen, Jen-Chieh
 ;; Created date 2020-12-26 22:45:18
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
